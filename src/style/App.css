@@ -1,0 +1,50 @@
+.publisher-name{
+  font-size: 12px !important;
+}
+
+.app-name{
+  font-size: 17px !important;
+}
+
+@media (max-width: 767px) {
+  .home-left-down {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-profit-title{
+    font-size: 11px !important;
+  }
+  .publisher-name{
+    font-size: 12px !important;
+  }
+}
+
+@media (max-width: 321px) {
+  .card-profit-title{
+    font-size: 8px !important;
+  }
+  .card-profit-wroth{
+    font-size: 14px !important;
+  }
+}
+
+
+.right-span-scroll::-webkit-scrollbar {
+  width: 4px;
+  height: 0px;
+  border-radius: 2px;
+}
+
+.right-span-scroll::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
+.right-span-scroll::-webkit-scrollbar-thumb {
+  background: rgb(187, 186, 186);
+}
+
+.right-span-scroll::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
