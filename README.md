@@ -15,4 +15,3 @@ Attached dashboard sample images.
 ### Mobile view
 
 ![mobile-view](https://user-images.githubusercontent.com/65342122/115461891-915b7580-a247-11eb-85cc-d513f655895c.PNG)
->>>>>>> 06683deb33990f63b85fe133a1c4cb2218639b71
