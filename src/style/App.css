@@ -1,9 +1,39 @@
-.publisher-name{
+.publisher-name {
   font-size: 12px !important;
 }
 
-.app-name{
+.app-name {
   font-size: 17px !important;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  grid-gap: 10px;
+  background-color: white;
+  padding: 10px;
+}
+
+.grid-container > div {
+  text-align: center;
+  font-size: 16px;
+}
+
+.app-details-mobile-view {
+  display: none;
+}
+
+.mobile-font{
+  font-size: 14px;
+}
+
+@media (max-width: 788px) {
+  .app-details-desktop-view {
+    display: none !important;
+  }
+  .app-details-mobile-view {
+    display: block !important;
+  }
 }
 
 @media (max-width: 767px) {
@@ -13,23 +43,22 @@
 }
 
 @media (max-width: 768px) {
-  .card-profit-title{
+  .card-profit-title {
     font-size: 11px !important;
   }
-  .publisher-name{
+  .publisher-name {
     font-size: 12px !important;
   }
 }
 
 @media (max-width: 321px) {
-  .card-profit-title{
+  .card-profit-title {
     font-size: 8px !important;
   }
-  .card-profit-wroth{
+  .card-profit-wroth {
     font-size: 14px !important;
   }
 }
-
 
 .right-span-scroll::-webkit-scrollbar {
   width: 4px;

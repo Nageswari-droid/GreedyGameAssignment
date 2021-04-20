@@ -3,6 +3,7 @@ import axios from "axios";
 import AdCard from "./AdCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCog } from "@fortawesome/free-solid-svg-icons";
+import Loading from "../Components/Loading";
 
 function RightSpan() {
   const [adArr, setAdArr] = useState([]);
@@ -48,13 +49,7 @@ function RightSpan() {
                 );
               })
             ) : (
-              <div className="w-full h-full mx-auto">
-                <div className="flex flex-col items-center justify-center w-3/4 h-full mx-auto my-auto text-2xl">
-                  <div className="h-1/4"></div>
-                  <div className="items-center w-full p-8 mx-auto my-auto text-center bg-white border-2 border-black border-dashed rounded-md h-1/4">Loading...</div>
-                  <div className="h-1/4"></div>
-                </div>
-              </div>
+              <Loading></Loading>
             )}
           </div>
         </div>

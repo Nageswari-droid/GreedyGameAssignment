@@ -5,14 +5,18 @@ import { NavLink } from "react-router-dom";
 import bgColor from "../function/bgColor";
 import AdName from "../Components/AdName";
 
-const dashboardArr = [
-  { title: "Revenue", worth: "$345" },
-  { title: "Ad requests", worth: "34M" },
-  { title: "Ad Response", worth: "10M" },
-  { title: "Impressions", worth: "10M" },
-];
-
 function AdCard({ id, appName, publisherName }) {
+  let RevenueValue = Math.floor(Math.random(500) * 500);
+  let adRequestsValue = Math.floor(Math.random(100) * 100);
+  let adResponseValue = Math.floor(Math.random(50) * 50);
+  let impressionsValue = Math.floor(Math.random(50) * 50);
+
+  const dashboardArr = [
+    { title: "Revenue", worth: `$${RevenueValue}` },
+    { title: "Ad requests", worth: `${adRequestsValue}M` },
+    { title: "Ad Response", worth: `${adResponseValue}M` },
+    { title: "Impressions", worth: `${impressionsValue}M` },
+  ];
   const bgColorValue = bgColor();
 
   return (
