@@ -52,7 +52,7 @@ function AppDetails() {
       .catch((err) => {
         console.log(err);
       });
-  }, []);
+  }, [appId]);
 
   return (
     <div>
@@ -117,7 +117,7 @@ function AppDetails() {
                   );
 
                   return (
-                    <div className="flex flex-row items-center justify-center w-full py-4 text-center">
+                    <div key={`date-${date} clicks-${clicks * 10}`} className="flex flex-row items-center justify-center w-full py-4 text-center">
                       <div className="w-1/4 xl:w-1/4 lg:w-1/4 md:w-1/3">
                         {date}
                       </div>
@@ -171,7 +171,7 @@ function AppDetails() {
                     return (
                       <div className="w-full p-4 m-4 bg-white rounded-md shadow-md cursor-pointer xl:w-1/3 lg:w-1/3 md:w-1/3 sm:w-1/3 xs:w-3/4 hover:shadow-sm" style={{
                           border:`2px dashed ${borderValue}`
-                      }}>
+                      }} key={`date-${date} clicks-${clicks * 10}`}>
                         <div
                           className="p-3 font-semibold text-center"
                           style={{ fontSize: "18px" }}
